@@ -13,7 +13,7 @@ case month of:
 	else
 		result:=30;
 end;
-function LaterInDay(p1, p2: DateTime): DateTime := p1;
+function LaterInDay(p1, p2: DateTime): DateTime := max(p1, p2);
 function LaterInYear(p1, p2: DateTime): DateTime := p1;
 function DaysInYear(year: integer): integer := 0;
 function DaysInYearRange(year1, year2: integer): integer := 0;
