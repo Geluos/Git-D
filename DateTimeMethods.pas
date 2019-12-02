@@ -38,7 +38,12 @@ begin
   else
     result := 365;
 end;
-function DaysInYearRange(year1, year2: integer): integer := 0;
+function DaysInYearRange(year1, year2: integer): integer;
+begin
+  result := 0;
+  for var i:= year1 to year2 do
+    result +=DaysInYear(i);
+end;
 function SecondsInHours(hours: integer): integer := 0;
 
 begin
