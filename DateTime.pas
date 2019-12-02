@@ -1,3 +1,5 @@
-﻿begin
+﻿uses DateTimeTests;
+
+begin
 
 end.
