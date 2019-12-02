@@ -44,7 +44,7 @@ begin
   for var i:= year1 to year2 do
     result +=DaysInYear(i);
 end;
-function SecondsInHours(hours: integer): integer := 0;
+function SecondsInHours(hours: integer): integer := hours * 3600;
 
 begin
 
