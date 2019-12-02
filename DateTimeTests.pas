@@ -6,8 +6,8 @@ procedure TestIsLeapYear();
 begin
 	assert(IsLeapYear(2004), 'TestIsLeapYear fails on 2004');
 	assert(IsLeapYear(1812), 'TestIsLeapYear fails on 1812');
-	assert(IsLeapYear(2003), 'TestIsLeapYear fails on 2003');
-	assert(IsLeapYear(1999), 'TestIsLeapYear fails on 1999');
+	assert(not IsLeapYear(2003), 'TestIsLeapYear fails on 2003');
+	assert(not IsLeapYear(1999), 'TestIsLeapYear fails on 1999');
 end;
 
 procedure TestDaysInMonth();
